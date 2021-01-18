@@ -1,0 +1,146 @@
+html {
+    background-color: #F1F5FF;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    margin-bottom: 100px;
+}
+
+#intro-text {
+    margin-top: 75px;
+    margin-left: 73px;
+    line-height: 180%;
+}
+
+.percentage {
+    position: absolute;
+    width: 83px;
+    height: 52px;
+    background: #34568c;
+    box-shadow: 0px 1px 7px #D3DEFF, inset 0px 1px 12px rgba(174, 192, 249, 0.53);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 57px;
+    margin-left: 545px;
+}
+
+.match-percent {
+    text-align: center;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.match-box {
+    width: 576px;
+    height: 508px;
+    left: 73px;
+    top: 197px;
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: -2px 2px 21px 7px rgba(191, 207, 255, 0.47);
+    border-radius: 13px;
+    margin-left: 73px;
+    margin-top: 82px;
+}
+
+svg {
+    position: absolute;
+    width: 576px;
+    height: 508px;
+}
+
+line {
+    stroke: #CED7F3;
+}
+
+h3 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    margin-left: 41px;
+    margin-top: 29px;
+}
+
+h4 {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 180%;
+    letter-spacing: 1px;
+    color: #6F8CA6;
+}
+
+.location-header {
+    margin-top: 115px;
+    margin-left: 41px;
+}
+
+.adm-header {
+    margin-top: 226px;
+    margin-left: 41px;
+}
+
+.size-header {
+    margin-top: 335px;
+    margin-left: 41px;
+}
+
+.score-header {
+    margin-top: 115px;
+    margin-left: 306px;
+}
+
+.pubpriv-header {
+    margin-top: 226px;
+    margin-left: 306px;
+}
+
+.output-text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 141.5%;
+    letter-spacing: 0.5px;
+    color: #D37C2B;
+}
+
+.location {
+    margin-left: 41px;
+    margin-top: 152px;
+    font-size: 25px;
+    max-width: 235px;
+    line-height: 100%;
+}
+
+.rate {
+    margin-left: 41px;
+    margin-top: 257px;
+}
+
+.size {
+    margin-left: 41px;
+    margin-top: 367px;
+}
+
+.score {
+    margin-left: 306px;
+    margin-top: 147px;
+}
+
+.pubpriv {
+    margin-left: 306px;
+    margin-top: 257px;
+    font-size: 25px;
+    text-transform: uppercase;
+}

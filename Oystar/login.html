@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Oystar Login</title>
+        <meta name="description" content="Log in to Oystar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    </head>
+    <body>
+        <form id="login-form">
+            <div id="login-body">
+                <img id="logo" src="img/logo.png"/>
+                <p class="text" id="instructions">Sign in to continue</p>
+                <div id="login-area">
+                    <div id="input-fields">
+                        <i class="email-icon"></i>
+                        <input class="text login-box" type="text" id="login-email" placeholder="Email"/>
+                        <br>
+                        <i class="password-icon"></i>
+                        <input class="text login-box" type="password" id="login-password" placeholder="Password"/>
+                        <br>
+                    </div>
+                </div>
+                <button class="text" type="submit" id="login-button">Sign In</button>
+            </div>
+        </form>
+
+        <div id="divider">
+            <svg id="divider-svg" height="100">
+                <line class="line" id="line1" x1="0" y1="40" y2="40"></line>
+                <text class="text" y="47">OR</text>
+                <line class="line" id="line2" y1="40" y2="40"></line>
+            </svg>
+        </div>
+
+        <div id="google-fb">
+            <i class="google-icon"></i>
+            <button class="text" id="google-button">Login with Google</button>
+            <i class="fb-icon"></i>
+            <button class="text" id="fb-button">Login with Facebook</button>
+        </div>
+
+        <div id="register">
+            <p class="text" >Don't have an account? <span>Register</span></p>
+        </div>
+         
+        <script src="js/jquery.min.js"></script>
+        <script src="js/login.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+              apiKey: "AIzaSyBxrPyqtUtTrkfGv2w0fPACBWs7-UJFm1o",
+              authDomain: "oystar-user-data.firebaseapp.com",
+              projectId: "oystar-user-data",
+              storageBucket: "oystar-user-data.appspot.com",
+              messagingSenderId: "563415892810",
+              appId: "1:563415892810:web:bd4994bd43955c63a3b7b3",
+              measurementId: "G-3H8Q02Z81F"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+          </script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+#logo {
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+#instructions {
+    margin: 0;
+    text-align: center;
+}
+
+#login-body {
+    padding-bottom: 50px;
+}
+
+#login-area {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#login-area i {
+    position: absolute;
+}
+
+#input-fields {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.login-box {
+    width: 100%;
+    height: 60px;
+    display: block;
+    margin: auto;
+    border: 3px solid #EBF0FF;
+    border-radius: 5px;
+    padding-left: 70px;
+}
+
+.login-box::placeholder {
+    font-size: 18px;
+}
+
+.email-icon {
+    background: url('../img/system icon/24px/Message.png');
+    height: 40px;
+    width: 35px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.password-icon {
+    background: url('../img/system icon/24px/Password.png');
+    height: 38px;
+    width: 35px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#login-button {
+    text-align: center;
+    background-color: #285A84;
+    color: white;
+    display: block;
+    margin: auto;
+    border: #285A84;
+    border-radius: 5px;
+    width: 50%;
+    height: 65px;
+}
+
+#divider-svg {
+    display: block;
+    margin: auto;
+}
+
+#divider text {
+    text-anchor: middle;
+    font-weight: bolder;
+    fill: #9098B1;
+}
+
+.line {
+    stroke: lightgray;
+    stroke-width: 2px;
+}
+
+#google-fb {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#google-fb i {
+    position: absolute;
+}
+
+.google-icon {
+    background: url('../img/Other Icon/Google.png');
+    height: 40px;
+    width: 35px;
+    display: block;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.fb-icon {
+    background: url('../img/Other Icon/Facebook.png');
+    height: 40px;
+    width: 35px;
+    display: block;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#google-fb button {
+    width: 100%;
+    height: 75px;
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid #EBF0FF;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#register {
+    color: #9098B1;
+    margin: 50px;
+    text-align: center;
+}
+
+#register span {
+    color: #EF6F53;
+    font-weight: bold;
+}

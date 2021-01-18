@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Oystar Signup</title>
+        <meta name="description" content="Sign up for Oystar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/signup.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    </head>
+    <body>
+        <img id="logo" src="img/logo.png"/>
+        <h3 id="header" class="text">Get Started</h3>
+        <p class="text">Create a new account</p>
+        <form id="signup-form">
+            <div id="input-fields">
+                <i class="user-icon"></i>
+                <input class="text signup-box" type="text" id="signup-name" placeholder="Full Name"/>
+                <br>
+                <i class="email-icon"></i>
+                <input class="text signup-box" type="text" id="signup-email" placeholder="Your Email"/>
+                <br>
+                <i class="password-icon"></i>
+                <input class="text signup-box" type="password" id="signup-password" placeholder="Password"/>
+                <br>
+                <i class="password-icon"></i>
+                <input class="text signup-box" type="password" id="signup-password-2" placeholder="Password Again"/>
+                <br>
+            </div>
+            <button class="text" type="submit" id="signup-button">Sign Up</button>
+        </form>
+
+        <div id="signin">
+            <p class="text" >Have an account? <span>Sign In</span></p>
+        </div>
+         
+        <script src="js/jquery.min.js"></script>
+        <script src="js/signup.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+              apiKey: "AIzaSyBxrPyqtUtTrkfGv2w0fPACBWs7-UJFm1o",
+              authDomain: "oystar-user-data.firebaseapp.com",
+              projectId: "oystar-user-data",
+              storageBucket: "oystar-user-data.appspot.com",
+              messagingSenderId: "563415892810",
+              appId: "1:563415892810:web:bd4994bd43955c63a3b7b3",
+              measurementId: "G-3H8Q02Z81F"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+          </script>
+    </body>
+</html>

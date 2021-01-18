@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Preference Form</title>
+        <meta name="description" content="Oystar Preference Form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/preferenceForm.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+        <link type="text/css" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="Stylesheet"> 
+    </head>
+    <body>
+        <p id="instructions">Fill out your preferences below.</p>
+        <div id="states" class="category">
+            <svg class="catSVG" width="500" height="34">
+                <rect class="number"></rect>
+                <text class="numeral" x="18.5" y="25">1</text>
+                <text x="60" y="25">State(s)</text>
+            </svg>
+            <br>
+            <select id="states-input">
+                <option value="" disabled selected></option>
+            </select>                
+        </div>
+        <div id="admissions-rate" class="category">
+            <svg class="catSVG" width="500" height="34">
+                <rect class="number"></rect>
+                <text class="numeral" x="18.5" y="25">2</text>
+                <text x="60" y="25">Admissions Rate</text>
+            </svg>
+            <div class="range">
+                <input class="number-box" id="adm-lower" type="text" placeholder="25">
+                <span>to</span>
+                <input class="number-box" id="adm-upper" type="text" placeholder="75">
+                <br>
+                <input id="percent1" class="percent-sign" type="text" value="%" disabled/>
+                <input id="percent2" class="percent-sign" type="text" value="%" disabled/>          
+            </div>
+            <svg class="spectrum-container" width="700" height="100">
+                <g transform="translate(16,0)" class="spectrum">
+                    <line x1="10" y1="50" x2="618" y2="50"></line>
+                    <line x1="10" y1="30" x2="10" y2="70"></line>
+                    <line x1="618" y1="30" x2="618" y2="70"></line>
+                    <line x1="86" y1="40" x2="86" y2="60"></line>
+                    <line x1="162" y1="40" x2="162" y2="60"></line>
+                    <line x1="238" y1="40" x2="238" y2="60"></line>
+                    <line x1="314" y1="40" x2="314" y2="60"></line>
+                    <line x1="390" y1="40" x2="390" y2="60"></line>
+                    <line x1="466" y1="40" x2="466" y2="60"></line>
+                    <line x1="542" y1="40" x2="542" y2="60"></line>
+                    <text x="162" y="35">25</text>
+                    <text x="314" y="35">50</text>
+                    <text x="466" y="35">75</text>
+                    <text x="618" y="25">100</text>
+                </g>
+                <g transform="translate(178,0)" id="adm-point1">
+                    <circle class="spectrum-point" cx="0" cy="50"></circle>
+                    <text class="point-text" x="0" y="85">25%</text>
+                </g>
+                <g transform="translate(482,0)" id="adm-point2">
+                    <circle class="spectrum-point" cx="0" cy="50"></circle>
+                    <text class="point-text" x="0" y="85">75%</text>
+                </g>
+            </svg>
+        </div>
+        <div id="size" class="category">
+            <svg class="catSVG" width="500" height="34">
+                <rect class="number"></rect>
+                <text class="numeral" x="18.5" y="25">3</text>
+                <text x="60" y="25">Student Body Size</text>
+            </svg>
+            <div class="range">
+                <input class="number-box" id="size-lower" type="text" placeholder="12,500">
+                <span>to</span>
+                <input class="number-box" id="size-upper" type="text" placeholder="37,500">
+                <br>          
+            </div>
+            <svg class="spectrum-container" width="700" height="100">
+                <g transform="translate(16,0)" class="spectrum">
+                    <line x1="10" y1="50" x2="618" y2="50"></line>
+                    <line x1="10" y1="30" x2="10" y2="70"></line>
+                    <line x1="618" y1="30" x2="618" y2="70"></line>
+                    <line x1="86" y1="40" x2="86" y2="60"></line>
+                    <line x1="162" y1="40" x2="162" y2="60"></line>
+                    <line x1="238" y1="40" x2="238" y2="60"></line>
+                    <line x1="314" y1="40" x2="314" y2="60"></line>
+                    <line x1="390" y1="40" x2="390" y2="60"></line>
+                    <line x1="466" y1="40" x2="466" y2="60"></line>
+                    <line x1="542" y1="40" x2="542" y2="60"></line>
+                    <text x="618" y="25">50,000</text>
+                </g>
+                <g transform="translate(178,0)" id="size-point1">
+                    <circle class="spectrum-point" cx="0" cy="50"></circle>
+                    <text class="point-text" x="0" y="85">12,500</text>
+                </g>
+                <g transform="translate(482,0)" id="size-point2">
+                    <circle class="spectrum-point" cx="0" cy="50"></circle>
+                    <text class="point-text" x="0" y="85">37,500</text>
+                </g>
+            </svg>
+        </div>
+        <!-- <div id="fields" class="category">
+            <svg class="catSVG" width="500" height="34">
+                <rect class="number"></rect>
+                <text class="numeral" x="18.5" y="25">4</text>
+                <text x="60" y="25">Field(s) of Study</text>
+            </svg>
+            <br>
+            <select id="fields-input">
+                <option value="" disabled selected></option>
+            </select>
+        </div> -->
+        <div id="test-score" class="category">
+            <svg class="catSVG" width="500" height="34">
+                <rect class="number"></rect>
+                <text class="numeral" x="18.5" y="25">4</text>
+                <text x="60" y="25">SAT/ACT Score</text>
+            </svg>
+            <div id="test-choice">
+                <label><input checked type="radio" id="sat-button" name="test-type" value="SAT"><span>SAT</span></label>
+                <label><input type="radio" id="act-button" name="test-type" value="ACT"><span>ACT</span></label>                         
+            </div>
+            <div class="range">
+                <input class="number-box" id="score-lower" type="text" placeholder="590">
+                <span>to</span>
+                <input class="number-box" id="score-upper" type="text" placeholder="1600">
+                <br>          
+            </div>
+            <svg class="spectrum-container" width="700" height="100">
+                <g transform="translate(16,0)" class="spectrum">
+                    <line x1="10" y1="50" x2="618" y2="50"></line>
+                    <line x1="10" y1="30" x2="10" y2="70"></line>
+                    <line x1="618" y1="30" x2="618" y2="70"></line>
+                    <line x1="86" y1="40" x2="86" y2="60"></line>
+                    <line x1="162" y1="40" x2="162" y2="60"></line>
+                    <line x1="238" y1="40" x2="238" y2="60"></line>
+                    <line x1="314" y1="40" x2="314" y2="60"></line>
+                    <line x1="390" y1="40" x2="390" y2="60"></line>
+                    <line x1="466" y1="40" x2="466" y2="60"></line>
+                    <line x1="542" y1="40" x2="542" y2="60"></line>
+                    <text x="618" y="25">1600</text>
+                </g>
+                <g transform="translate(26,0)" id="score-point1">
+                    <circle class="spectrum-point" cx="0" cy="50"></circle>
+                    <text class="point-text" x="0" y="85">590</text>
+                </g>
+                <g transform="translate(633,0)" id="score-point2">
+                    <circle class="spectrum-point" cx="0" cy="50"></circle>
+                    <text class="point-text" x="0" y="85">1600</text>
+                </g>
+            </svg>
+        </div>
+        <div id="pub-priv" class="category">
+            <svg class="catSVG" width="53" height="34">
+                <rect class="number"></rect>
+                <text class="numeral" x="18.5" y="25">5</text>
+            </svg>
+            <input class="checkbox" id="public-schools" type="checkbox">
+            <svg class="box-label" width="100" height="34">
+                <text x="0" y="28">Public</text>
+            </svg>
+            <br>
+            <input class="checkbox" id="private-schools" type="checkbox">
+            <svg class="box-label" width="100" height="34">
+                <text x="0" y="28">Private</text>
+            </svg>            
+        </div>
+        <div id="end">
+            <button id="submit-button">Submit</button>
+        </div>
+        
+        <script src="js/jquery.min.js"></script>  
+        <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/preferenceForm.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB_zqbDkAq7ELuukqARnPLkivmkfkhi72w",
+            authDomain: "oystar-university-data.firebaseapp.com",
+            databaseURL: "https://oystar-university-data.firebaseio.com",
+            projectId: "oystar-university-data",
+            storageBucket: "oystar-university-data.appspot.com",
+            messagingSenderId: "111134670551",
+            appId: "1:111134670551:web:07ef86c167116a617efa92",
+            measurementId: "G-07BDN5TVMG"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+
+    </body>
+</html>

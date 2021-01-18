@@ -1,0 +1,221 @@
+body {
+    font-family: 'Poppins';
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    text-anchor: start;
+}
+
+#instructions {
+    padding-left: 71px;
+    padding-top: 50px;
+}
+
+.number {
+    width: 37px;
+    height: 34px;
+    rx: 5px;
+    fill: #EBF0FF;
+}
+
+.category {
+    padding-top: 50px;
+}
+
+.category svg {
+    font-size: 24px;
+    font-weight: bold;    
+}
+
+.catSVG {
+    margin-top: 10px;
+    padding-left: 81px;
+}
+
+.numeral {
+    text-anchor: middle;
+    fill: #223263;
+}
+
+.checkbox {
+    width: 29px;
+    height: 28px;
+    margin: 0px;
+}
+
+#private-schools {
+    margin-top: 10px;
+    margin-left: 141px;
+}
+
+.box-label {
+    text-anchor: start;
+    padding-left: 5px;
+}
+
+#states-input {
+    margin-top: 10px;
+    margin-left: 151px;
+    height: 52px;
+    width: 100px;
+    font-size: 22px;
+    font-family: "Poppins";
+    border: 2px solid #DFE7FF;
+    border-radius: 5px;
+}
+
+.stateSVG {
+    position: absolute;
+    display: inline;
+}
+
+.selected-state-box {
+    fill: #FFEEE2;
+    rx: 5px;
+}
+
+.selected-state-text {
+    text-anchor: middle;
+    fill: #D37C2B;
+    letter-spacing: 0.4px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.selected-state-x {
+    text-anchor: middle;
+    fill: lightgray;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+}
+
+.number-box {
+    box-shadow: 0px 1px 12px #D3DEFF;
+    border-radius: 6px;
+    border: none;
+    text-align: right;
+    width: 119px;
+    height: 44px;
+    padding-right: 15px;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 22px;
+    color: #223263;
+}
+
+.number-box::placeholder {
+    color: lightgray;
+}
+
+#admissions-rate .number-box {
+    padding-right: 35px;
+    width: 83px;
+    height: 44px;
+}
+
+.range { 
+    padding-top: 20px;
+    padding-left: 152px;
+}
+
+.range span {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #223263;
+}
+
+.percent-sign {
+    color: #223263;
+    position: absolute;
+    text-align: right;
+    font-weight: 300;
+    font-size: 22px;
+    border: none;
+    background: white;
+    width: 20px;
+    height: 35px;
+    margin-top: -42px;  
+}
+
+#percent1 {
+    margin-left: 85px;  
+}
+
+#percent2 {
+    margin-left: 285px;
+}
+
+.spectrum-container {
+    margin-left: 120px;
+    margin-top: 31px;
+}
+
+.spectrum text {
+    font-size: 14px;
+    fill: #285A84;
+    text-anchor: middle;
+    letter-spacing: normal;
+}
+
+line {
+    stroke:#D3DEFF;
+    stroke-width: 2px;
+}
+
+.spectrum-point {
+    fill: #FFEEE2;
+    stroke: rgba(216, 161, 109, 0.52);
+    r: 8.5px;
+}
+
+.point-text {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-anchor: middle;
+    fill: #D37C2B;
+}
+
+#fields-input{
+    margin-top: 10px;
+    margin-left: 151px;
+    height: 52px;
+    width: 300px;
+    font-size: 22px;
+    font-family: "Poppins";
+    border: 2px solid #DFE7FF;
+    border-radius: 5px;    
+}
+
+#test-choice {
+    margin-left: 145px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #223263;
+}
+
+#test-choice label {
+    padding-left: 10px;
+}
+
+#test-choice span {
+    padding-left: 5px;
+}
+
+#end {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+
+}
+
+#submit-button {
+    width: 183px;
+    height: 74px;
+    font-family: "Poppins";
+    font-size: 36px;
+    color: #D37C2B;
+    border: none;
+    background: #FFEEE2;
+    box-shadow: 0px 0px 14px 1px rgba(211, 124, 43, 0.31);
+    border-radius: 5px;
+}
