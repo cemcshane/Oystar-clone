@@ -4,7 +4,7 @@ $( document ).ready(function() {
     $('.signup-box').width(adjustedWidth);
 
     $('#signin span').on("click", function() {
-      window.location.replace("signup.html");
+      window.location.replace("login.html");
   })
 });
 
