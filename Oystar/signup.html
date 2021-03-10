@@ -23,10 +23,10 @@
                 <input class="text signup-box" type="text" id="signup-email" placeholder="Your Email"/>
                 <br>
                 <i class="password-icon"></i>
-                <input class="text signup-box" type="password" id="signup-password" placeholder="Password"/>
+                <input class="text signup-box" type="password" pattern=".{6,}" required title="6 characters minimum" id="signup-password" placeholder="Password"/>
                 <br>
                 <i class="password-icon"></i>
-                <input class="text signup-box" type="password" id="signup-password-2" placeholder="Password Again"/>
+                <input class="text signup-box" type="password" pattern=".{6,}" required title="6 characters minimum" id="signup-password-2" placeholder="Password Again"/>
                 <br>
             </div>
             <button class="text" type="submit" id="signup-button">Sign Up</button>
