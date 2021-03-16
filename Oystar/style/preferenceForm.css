@@ -89,13 +89,12 @@ body {
 }
 
 .number-box {
-    box-shadow: 0px 1px 12px #D3DEFF;
+    box-shadow: 0px 1px 12px #D3DEFF; 
     border-radius: 6px;
-    border: none;
+    border: groove;
     text-align: right;
     width: 119px;
     height: 44px;
-    padding-right: 15px;
     font-family: "Poppins";
     font-weight: 300;
     font-size: 22px;
@@ -137,11 +136,11 @@ body {
 }
 
 #percent1 {
-    margin-left: 85px;  
+    margin-left: 90px;  
 }
 
 #percent2 {
-    margin-left: 285px;
+    margin-left: 295px;
 }
 
 .spectrum-container {
