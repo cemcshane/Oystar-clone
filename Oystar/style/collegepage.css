@@ -1,3 +1,8 @@
+
+html {
+    background-color: #F1F5FF;
+}
+
 /* .nav {
     background-color: #333;
     overflow: hidden;
@@ -101,4 +106,6 @@ div {
   border-bottom: 1px solid black;
   padding: 10px;
   font-size: 20px;
+}
+#University-Updates div{
 }
