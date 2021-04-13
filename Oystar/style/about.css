@@ -26,7 +26,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: #EF6F53;
   color: white;
 }
 
@@ -44,21 +44,33 @@ html {
   color: grey;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+
+a{
+display:block;
+text-align:left;
+text-decoration: none;
 }
 
-.button:hover {
-  background-color: #555;
+button {
+    margin: 30px;
+    background-color: #285A84;
+    color: white;
+    width: 20%;
+    font-size: 20px;
+    height: 70px;
+    border: #285A84;
+    border-radius: 5px;
+    text-align:center;
 }
+
+.top{
+ background-color: #EF6F53;
+}
+
+
+
+    
+
 
 @media screen and (max-width: 650px) {
   .column {
